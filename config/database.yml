@@ -79,7 +79,10 @@ test:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
 production:
-  <<: *default
-  database: toy_app2_production
-  username: postgres
-  password: 123
+  encoding: unicode
+  adapter: postgresql
+  database: postgres://zwvfapogewruhi:7092ece2dcffb40260c8cb547f09d9cdbaaad91f571c81b97f742046b347520f@ec2-174-129-224-33.compute-1.amazonaws.com:5432/d38nabc3ptmas0
+  pool: 5
+  timeout: 5000
+
+
