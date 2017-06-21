@@ -16,7 +16,7 @@
       <tr>
         <% @user = micropost.user %>
         <td height=80 width=400 style="word-break:break-all"><%= micropost.content %></td>
-        <td><%= @user.name %></td>
+        <td><%= micropost.user %></td>
         <td><%= link_to 'Show', micropost %></td>
         <td><%= link_to 'Edit', edit_micropost_path(micropost) %></td>
         <td><%= link_to 'Destroy', micropost, method: :delete, data: { confirm: 'Are you sure?' } %></td>
