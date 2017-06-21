@@ -4,12 +4,7 @@ class MicropostsController < ApplicationController
   # GET /microposts
   # GET /microposts.json
   def index
-    @microposts = Micropost.all
-
-    def name(micropost)
-      @user = micropost.user
-    end
-    
+    @microposts = Micropost.all 
   end
 
   # GET /microposts/1
@@ -25,6 +20,10 @@ class MicropostsController < ApplicationController
 
   # GET /microposts/1/edit
   def edit
+  end
+
+  def name(micropost)
+    micropost.user
   end
 
   # POST /microposts
