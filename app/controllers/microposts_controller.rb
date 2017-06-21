@@ -5,6 +5,7 @@ class MicropostsController < ApplicationController
   # GET /microposts.json
   def index
     @microposts = Micropost.all 
+    
   end
 
   # GET /microposts/1
@@ -22,9 +23,6 @@ class MicropostsController < ApplicationController
   def edit
   end
 
-  def name(micropost)
-    micropost.user
-  end
 
   # POST /microposts
   # POST /microposts.json
